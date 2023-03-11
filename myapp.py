@@ -5,7 +5,7 @@ class MyApp:
     def __init__(self,url):
         self.url = url
         self.client = instagrapi.Client()
-        client.login('mathan_dev1', 'Mathankumar@14')
+        self.client.login('mathan_dev1', 'Mathankumar@14')
         self.media_pk = self.client.media_pk_from_url(self.url)
         self.media_info = self.client.media_info(self.media_pk).dict()
         self.media_type = self.media_info['media_type']
