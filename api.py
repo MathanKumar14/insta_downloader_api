@@ -11,5 +11,5 @@ async def process_url(url: str):
     obj = MyApp(url)
     link = obj.get_link()
     
-    return {"media_url": link}
+    return link
 
